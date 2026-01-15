@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Supplies Co.</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome v6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-pap8Bg/+hThfJ0w3y9xEzzbX+mXgTgkLQ1V8R6dqlbn2X5M5V1VvJfx2hzEdf7iwqZb8rV+oY6xDyOcZ+1l/mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='css/img/favicoon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+
+   <header class="header">
+    <div class="container header-container">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="static/css/img/placeholder.jpg" alt="Radium Logo">
+        <span class="logo-text">Radium Industrial Supplies Inc.</span>
+      </div>
+
+      <!-- DESKTOP NAV -->
+      <nav class="nav desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- DESKTOP BUTTON -->
+      <a href="#contact" class="btn-quote desktop-btn">Get Quote</a>
+
+      <!-- HAMBURGER -->
+      <div id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div id="mobileNav" class="mobile-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-quote mobile-btn">Get Quote</a>
+    </div>
+  </header>
+
+ 
+
+<!-- HERO / HOME SECTION -->
+<section id="home" class="hero">
+  <div class="hero-container">
+    <!-- LEFT -->
+    <div class="hero-text fade-left">
+      <h1>
+        Quality Industrial <span>Supplies</span><br />
+        You Can Trust
+      </h1>
+      <p class="subtitle">Your Trusted Partner in Industrial Solutions</p>
+      <p class="description">
+        Leading provider of quality industrial supplies and equipment.
+        We deliver excellence through comprehensive solutions tailored
+        to your business needs.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn-primary">Our Products</a>
+        <a href="#contact" class="btn-secondary">Get Started</a>
+      </div>
+    </div>
+
+  <!-- RIGHT -->
+    <div class="hero-image fade-right">
+      <img src="static/css/img/banner.png" alt="Industrial Work">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- PRODUCTS / SERVICES SECTION -->
+<section id="products" class="products">
+  <div class="container">
+    <h2>Our <span>Products</span> & Services</h2>
+    <p class="products-subtitle">
+      Comprehensive industrial supply solutions tailored to meet your business needs
+    </p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/hardhat.png" alt="Safety Equipment Icon">
+        </div>
+        <h3>Safety Equipment</h3>
+        <p>Comprehensive range of personal protective equipment and workplace safety solutions to keep your team secure.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/indtools.png" alt="Industrial Tools Icon">
+        </div>
+        <h3>Industrial Tools</h3>
+        <p>Professional-grade tools and equipment for manufacturing, construction, and maintenance operations.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/cog.png" alt="Machinery Parts Icon">
+        </div>
+        <h3>Machinery Parts</h3>
+        <p>High-quality replacement parts and components for industrial machinery and equipment.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/construction.png" alt="Construction Materials Icon">
+        </div>
+        <h3>Construction Materials</h3>
+        <p>Durable materials and supplies for construction projects of all scales and requirements.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/bolt.png" alt="Electrical Supplies Icon">
+        </div>
+        <h3>Electrical Supplies</h3>
+        <p>Complete electrical components, wiring, and power management solutions for industrial applications.</p>
+      </div>
+
+      <div class="product-card">
+        <div class="icon-box">
+          <img src="static/css/img/icons/maintenance.png" alt="Maintenance Supplies Icon">
+        </div>
+        <h3>Maintenance Supplies</h3>
+        <p>Essential maintenance products including lubricants, cleaning agents, and repair materials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image fade-left">
+      <img src="{{ url_for('static', filename='css/img/placeholder.jpg') }}" alt="About Radium Industrial">
+    </div>
+
+    <div class="about-content fade-right">
+      <h2>About <span>Radium Industrial</span></h2>
+      <p>With over 15 years of experience in the industrial supply sector, Radium Industrial Supplies Inc. has established itself as a trusted partner for businesses across the Philippines.</p>
+      <p>We specialize in providing high-quality industrial equipment, safety supplies, and maintenance solutions. Our commitment to excellence and customer satisfaction has made us the preferred supplier for countless companies.</p>
+
+      <div class="about-stats">
+        <div class="stat-box fade-up">
+          <h3>500+</h3>
+          <span>Happy Clients</span>
+        </div>
+        <div class="stat-box fade-up">
+          <h3>10K+</h3>
+          <span>Products Delivered</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section">
+  <div class="container">
+    <h2>What Our <span>Clients Say</span></h2>
+    <p class="subtitle">
+      Don't just take our word for it – hear from our satisfied customers
+    </p>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Radium Industrial Supplies has been our go-to supplier for over 5
+            years. Their product quality and customer service are exceptional."
+          </p>
+          <hr>
+          <h4>Maria Santos</h4>
+          <span>Procurement Manager</span>
+          <small>ABC Manufacturing Corp.</small>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Reliable, professional, and always delivering on time. Radium has
+            become an invaluable partner to our construction projects."
+          </p>
+          <hr>
+          <h4>John Reyes</h4>
+          <span>Operations Director</span>
+          <small>BuildTech Construction</small>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Outstanding product range and knowledgeable staff. They understand
+            our needs and provide perfect solutions every time."
+          </p>
+          <hr>
+          <h4>Lisa Chen</h4>
+          <span>Facility Manager</span>
+          <small>TechPro Industries</small>
+        </div>
+
+        <!-- Duplicate testimonials for infinite loop -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Radium Industrial Supplies has been our go-to supplier for over 5
+            years. Their product quality and customer service are exceptional."
+          </p>
+          <hr>
+          <h4>Maria Santos</h4>
+          <span>Procurement Manager</span>
+          <small>ABC Manufacturing Corp.</small>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Reliable, professional, and always delivering on time. Radium has
+            become an invaluable partner to our construction projects."
+          </p>
+          <hr>
+          <h4>John Reyes</h4>
+          <span>Operations Director</span>
+          <small>BuildTech Construction</small>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            "Outstanding product range and knowledgeable staff. They understand
+            our needs and provide perfect solutions every time."
+          </p>
+          <hr>
+          <h4>Lisa Chen</h4>
+          <span>Facility Manager</span>
+          <small>TechPro Industries</small>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="container fade-in">
+    <div class="contact-title">
+      <h2>Get In <span>Touch</span></h2>
+      <p>Ready to start your project? Contact us today for a consultation</p>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-left">
+        <h3>Contact Information</h3>
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>78 San Roque Street, Doña Juana Homes,<br>Holy Spirit Quezon City, Philippines</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📞</div>
+          <div>
+            <strong>Phone</strong>
+            <p>0905 397 2531<br>+63 905 397 2531</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p>radiumindustrial.supp@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+<div class="contact-right">
+  <h3>Send Us a Message</h3>
+  <form class="contact-form" method="POST" action="/contact">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+<div class="logo">
+  <img src="{{ url_for('static', filename='css/img/placeholder.jpg') }}" alt="Brand Logo">
+  <span class="logo-text">Radium Industrial Supplies Inc.</span>
+</div>
+      <p>Your Trusted Partner in Industrial Solutions</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-links">
+      <h5>Services</h5>
+      <ul>
+        <li>Safety Equipment</li>
+        <li>Industrial Tools</li>
+        <li>Machinery Parts</li>
+        <li>Construction Materials</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h5>Contact</h5>
+      <p>0905 397 2531</p>
+      <p>radiumindustrial.supp@gmail.com</p>
+
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/profile.php?id=61578065264852" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Radium Industrial Supplies Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // ===== Smooth scrolling for all anchor links =====
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      const targetId = this.getAttribute("href").substring(1);
+      const target = document.getElementById(targetId);
+      if(target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+// ===== Mobile hamburger toggle (FIXED) =====
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+
+if (hamburger && mobileNav) {
+  hamburger.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
+
+  // Close menu when clicking a link
+  mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+      hamburger.classList.remove("open");
+    });
+  });
+}
+
+
+  // ===== Close mobile menu when a link inside it is clicked =====
+  mobileNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active"); // hide menu
+      hamburger.classList.remove("open");   // reset hamburger
+    });
+  });
+});
+
+// ===== Infinite scroll for testimonials =====
+const track = document.querySelector(".testimonial-track");
+let cardWidth = document.querySelector(".testimonial-card").offsetWidth + 30; // card width + gap
+let scrollPos = 0;
+
+function scrollTestimonials() {
+  scrollPos += 1; // pixels per frame
+  if (scrollPos >= track.scrollWidth / 2) {
+    scrollPos = 0; // Reset to start for infinite loop
+  }
+  track.style.transform = `translateX(-${scrollPos}px)`;
+  requestAnimationFrame(scrollTestimonials);
+}
+
+window.addEventListener("load", () => {
+  requestAnimationFrame(scrollTestimonials);
+});
+
+// Recalculate card width on resize
+window.addEventListener("resize", () => {
+  cardWidth = document.querySelector(".testimonial-card").offsetWidth + 30;
+});
+</script>
+
+
